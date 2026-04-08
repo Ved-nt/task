@@ -1,16 +1,116 @@
-# React + Vite
+## Mood Calendar
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern, interactive calendar application** built with **React, Three.js, and Framer Motion**, featuring smooth animations, range selection, and persistent notes.
 
-Currently, two official plugins are available:
+Features
+ 1. Calendar
+    Interactive monthly calendar UI
+    Date range selection (start → end)
+    Weekend & holiday highlighting
+    Smooth animations using Framer Motion
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ 2. Notes System
+    Add notes linked to selected date ranges
+    Persistent storage using LocalStorage
+    Timestamped entries
+    Delete notes functionality
 
-## React Compiler
+  3. UI / UX
+    Glassmorphism-based modern design
+    Responsive layout (mobile + desktop)
+    Theme-aware styling using CSS variables
+    Smooth hover + click animations
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+  4.Animated Background
+    Built with **Three.js**
+    Floating particle system
+    Dynamic lighting effects
+    Wave-based motion animation
+    Fully responsive
 
-## Expanding the ESLint configuration
+Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React.js
+* **Animations:** Framer Motion
+* **3D Graphics:** Three.js
+* **Styling:** Tailwind CSS
+* **State Management:** React Hooks
+* **Storage:** LocalStorage
+
+---
+
+Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── BackgroundScene.jsx      # Three.js animated background
+│   ├── CalendarGrid.jsx        # Calendar layout & logic
+│   ├── DayCell.jsx             # Individual date cell
+│   ├── NotesSection.jsx        # Notes + local storage
+│   ├── HeroSVG.jsx             # Decorative UI element
+│   └── Calendar.jsx            # Main container
+│
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/Ved-nt/task.git
+
+# Navigate into the project
+cd task
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
+```
+
+---
+
+##  How It Works
+
+###  Date Selection
+
+ First click → Start date
+ Second click → End date
+ Automatically highlights range
+
+###  Notes
+
+* Notes are saved with:
+
+   Selected range
+   Timestamp
+* Stored in browser using `localStorage`
+
+###  Background Animation
+
+* Uses **Three.js** to render particles
+* Light sources move dynamically
+* Particles animate in wave patterns
+
+---
+
+##  Future Improvements
+
+  Month & year navigation
+  Google Calendar integration
+  Dark mode toggle
+  Drag-to-select date range
+  Backend storage (MongoDB / Firebase)
+  Notifications & reminders
+
+---
+
+e
+
+This project is licensed under the MIT License.
