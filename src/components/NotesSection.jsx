@@ -51,11 +51,12 @@ export default function NotesSection({ range }) {
       />
 
       <button
-        onClick={saveNote}
-        className="mt-3 rounded-full bg-[var(--accent)] px-5 py-2 text-sm font-semibold text-white transition hover:brightness-110"
-      >
-        Save Note
-      </button>
+  onClick={saveNote}
+  className="mt-3 rounded-full bg-[var(--accent)] px-6 py-2 text-sm font-semibold text-black shadow-md transition-colors hover:bg-[var(--accent-soft)] hover:text-[var(--ink)] active:scale-95"
+>
+  Save Note
+</button>
+
 
       <div className="mt-6">
         <h3 className="mb-3 font-semibold">Saved Notes</h3>

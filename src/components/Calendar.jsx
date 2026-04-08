@@ -134,8 +134,8 @@ export default function Calendar() {
                 onClick={() => setTheme(t)}
                 className={`rounded-full px-4 py-2 text-sm font-semibold capitalize transition ${
                   theme === t
-                    ? "bg-[var(--accent)] text-white shadow-lg"
-                    : "border border-white/60 bg-white/70 text-[var(--ink)] hover:bg-white"
+                    ? "bg-[var(--accent)] text-gray-600 shadow-lg"
+                    : "border border-white/60 bg-white/70 text-[var(--ink)] hover:bg-gray"
                 }`}
               >
                 {t}

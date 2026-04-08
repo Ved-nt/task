@@ -10,14 +10,14 @@ export default function DayCell({
   onClick,
 }) {
   const base =
-    "relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border text-sm font-semibold transition sm:h-14 sm:w-14";
+    "relative flex h-11 w-11 cursor-pointer items-center justify-center rounded-xl border text-sm font-semibold transition-colors sm:h-14 sm:w-14";
   const state = isSelected
-    ? "border-transparent bg-[var(--accent)] text-white shadow-lg"
+    ? "border-transparent bg-[var(--accent)] text-black shadow-lg"
     : isInRange
       ? "border-transparent bg-[var(--accent-soft)] text-[var(--ink)]"
       : weekend
-        ? "border-white/60 bg-white/65 text-rose-600 hover:bg-white"
-        : "border-white/60 bg-white/65 text-[var(--ink)] hover:-translate-y-0.5 hover:bg-white";
+        ? "border-white/60 bg-white/65 text-rose-600 hover:bg-white hover:text-rose-600"
+        : "border-white/60 bg-white/65 text-[var(--ink)] hover:-translate-y-0.5 hover:bg-white hover:text-[var(--ink)]";
 
   return (
     <Motion.div
