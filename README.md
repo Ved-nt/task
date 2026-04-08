@@ -106,11 +106,8 @@ npm run dev
   Google Calendar integration
   Dark mode toggle
   Drag-to-select date range
-  Backend storage (MongoDB / Firebase)
+  Backend storage (PostgreSQL)
   Notifications & reminders
 
 ---
 
-e
-
-This project is licensed under the MIT License.
